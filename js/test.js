@@ -87,7 +87,7 @@ let lang = {
     en: {
         subscr: "Subscribe Now",
         prih2:"Pricing & Plans",
-        pris1:"£/600",
+        pris1:"£/750",
         pris2:"12/weeks",
         pris3:"£/2000",
         pris4:"12/weeks",
