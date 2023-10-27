@@ -87,9 +87,9 @@ let lang = {
         prih2:"Pricing & Plans",
         pris1:"£/600",
         pris2:"12/weeks",
-        pris3:"£/2000",
+        pris3:"£/999",
         pris4:"12/weeks",
-        pris5:"£/2500",
+        pris5:"£/1199",
         pris6:"12/weeks",
 
 
