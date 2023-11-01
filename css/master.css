@@ -1554,7 +1554,7 @@ margin: 0 .5rem;
   height: 88px;
   right: 1.5rem;
   top: -1rem;
-  padding-top:1.5rem;
+  padding-top:.5rem;
   text-align: center;
 }
 
@@ -1564,7 +1564,7 @@ margin: 0 .5rem;
 
 .pricing__pricing-symbol {
   font-size:1rem;
-  /* text-decoration: line-through;  */
+  text-decoration: line-through; 
 }
 .pricing__pricing-symbolo {
   font-size:1rem;
