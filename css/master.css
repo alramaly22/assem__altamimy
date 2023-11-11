@@ -1648,6 +1648,19 @@ margin: 0 .5rem;
   box-shadow: 0 12px 24px hsla(210, 97%, 54%, 0.2);
 }
 
+.bullerpricing{
+  FILTER: blur(2PX);
+}
+.buerbutton{
+  color: #ffffff5c;
+    BACKGROUND: hsl(210deg 96% 54% / 22%);
+}
+.bullertitle{
+  COLOR: #ffffff29;
+}
+.centerpricing{
+  text-align: center;
+}
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 320px) {
