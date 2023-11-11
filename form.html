@@ -91,6 +91,7 @@
 <li></li>
 <li></li>
 <li></li>
+<li></li>
 	</ul>
 	<!-- fieldsets -->
     <fieldset class="fi">
@@ -443,6 +444,30 @@
         </div>
         </div>
         <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    <fieldset>
+        <h2 class="fs-title">Question 18</h2>
+        <h3 class="fs-subtitle">What package did you choose in terms of pricing ?</h3>
+        <div class="radio-container">
+            <div class="ff">
+        <div class="f1">    <label class="f1">
+            <input class="radio" type="radio" name="package" value="Saved"> Saved (currently inactive)
+        </label></div>
+        <div class="f2">
+            <label class="f2">
+                <input class="radio" type="radio" name="package" value="Silver"> Silver
+            </label>
+        </div>
+            <div class="f3">
+                <label class="f3">
+                    <input class="radio" type="radio" name="package" value="Gold"> Gold
+                </label>
+            </div>
+        </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" id="sendToWhatsApp" class="submit action-button" value="Send" />
     </fieldset>
     
@@ -518,8 +543,12 @@
              // احصل على إجابة السؤال السابع عشر
         const trainingDays = document.querySelector('input[name="trainingDays"]:checked').value;
 
+        
+             // احصل على إجابة السؤال السابع عشر
+             const package = document.querySelector('input[name="package"]:checked').value;
+
             // بناء الرسالة
-            let message = `Name: ${name}\nAge: ${age}\nEmail: ${email}\nHeight: ${rangeValue}\nWeight: ${rangeWeight}\nhear about us: ${source}\nEx Coach Issues: ${exCoachIssues}\nDiabetes or High Blood Pressure: ${diabetesOrHighBloodPressure}\nProteins: ${selectedProteins}\nCarbohydrates: ${selectedCarbohydrates}\nNuts: ${selectedNuts}\nFruits: ${selectedFruits}\nTypical Daily Meal: ${dailyMeal}\nFoods for Diet: ${dietFoods}\nFoods You Can't Eat: ${foodsNotEaten}\nGoals: ${selectedGoals}\nTraining Location: ${trainingLocation}\nNumber of Meals: ${selectedMeals}\nTraining Days: ${trainingDays}\n`;
+            let message = `Name: ${name}\nAge: ${age}\nEmail: ${email}\nHeight: ${rangeValue}\nWeight: ${rangeWeight}\nhear about us: ${source}\nEx Coach Issues: ${exCoachIssues}\nDiabetes or High Blood Pressure: ${diabetesOrHighBloodPressure}\nProteins: ${selectedProteins}\nCarbohydrates: ${selectedCarbohydrates}\nNuts: ${selectedNuts}\nFruits: ${selectedFruits}\nTypical Daily Meal: ${dailyMeal}\nFoods for Diet: ${dietFoods}\nFoods You Can't Eat: ${foodsNotEaten}\nGoals: ${selectedGoals}\nTraining Location: ${trainingLocation}\nNumber of Meals: ${selectedMeals}\nTraining Days: ${trainingDays}\n package name: ${package}\n`;
 
             // تشفير الرسالة لاستخدامها في رابط WhatsApp
             const encodedMessage = encodeURIComponent(message);
