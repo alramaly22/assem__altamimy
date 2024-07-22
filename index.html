@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="/node_modules/@splidejs/splide/dist/css/splide.min.css"
     /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <meta name="description" content="Assem Altamimy is a certified fitness trainer and nutrition expert who helps individuals change their mindsets and adopt healthier lifestyles. With over 9 years of experience in the fitness industry and multiple certifications, Assem offers customized fitness and nutrition programs to help clients achieve their goals through flexible plans. Learn how to improve your health and fitness with Assem Altamimy." />
     <meta property="og:title" content="Assem Altamimy - Certified Fitness Trainer and Nutrition Expert" />
     <meta property="og:description" content="Assem Altamimy is a certified fitness trainer and nutrition expert who helps individuals change their mindsets and adopt healthier lifestyles. With over 9 years of experience in the fitness industry and multiple certifications, Assem offers customized fitness and nutrition programs to help clients achieve their goals through flexible plans. Learn how to improve your health and fitness with Assem Altamimy." />
@@ -32,6 +38,59 @@
 <body>
 
         <!--==================== HEADER ====================-->
+<!-- 
+        <div class="countdown">
+        <div class="discount-container">
+    
+        <div class="info">
+            <div class="discount-heading">Massive Sale</div>
+            <div class="discount-subheading">up to 75% off</div>
+          </div>
+    
+          <div class="countdown-timer">
+            <div class="group">
+              <span class="value DAYS" id="day-box">00</span>
+              <div class="unit">Days</div>
+            </div>
+    
+            <div class="group">
+              <span class="value HOURS" id="hr-box">00</span>
+              <div class="unit">Hrs</div>
+            </div>
+    
+            <div class="group">
+              <span class="value MINUTE"  id="min-box">00</span>
+              <div class="unit">Min</div>
+            </div>
+    
+            <div class="group">
+              <span class="value SECONDS" id="sec-box">00</span>
+              <div class="unit">Sec</div>
+            </div>
+    </div>
+            
+      
+            <a href="pricing.html" class="button">Join now</a>
+      
+            <div class="close-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+      
+          </div>
+        </div> -->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="index.html" class="nav__logo">
@@ -41,7 +100,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link">Home</a>
+                            <a href="form2.html" class="nav__link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="about.html" class="nav__link">About</a>
@@ -76,6 +135,7 @@
                 </div>
             </nav>
         </header> 
+
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
@@ -838,7 +898,7 @@
                                     <source src="image/Website-3_3.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
-                                                                <div class="popular__shadow"></div>
+                                <div class="popular__shadow"></div>
                             </div>
                             <!-- <h2 class="popular__title">
                                 ncjanjkcs
@@ -1347,13 +1407,57 @@
 
         <!-- <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
         <script src="js/breackpoints.js"></script> -->
+        
     	<script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
         <!-- swiper -->
+            <!-- <SCript>let dayBox = document.getElementById("day-box");
+                let hrBox = document.getElementById("hr-box");
+                let minBox = document.getElementById("min-box");
+                let secBox = document.getElementById("sec-box");
+
+                let endDate = new Date(2023,10,27,16,30);
+
+                let endTime = endDate.getTime();
+                
+                function countdown(){
+                    let todayDate = new Date();
+                    let todayTime = todayDate.getTime();
+                
+                    let remainingTime = endTime - todayTime;
+                
+                    let oneMin = 60 * 1000;
+                    let oneHr = 60 * oneMin;
+                    let oneDay = 24 * oneHr;
+                
+                    let addZeroes = num => num < 10 ? `0${num}` : num;
+                
+                    if(endTime < todayTime){
+                        clearInterval(i);
+                        document.querySelector(".countdown").innerHTML = `<h1>Countdown had expired!</h1>`;
+                    }
+                 
+                    else{
+                        let daysLeft = Math.floor(remainingTime / oneDay);
+                        let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
+                        let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
+                        let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
+                
+                        //Displaying Valurs
+                        dayBox.textContent = addZeroes(daysLeft);
+                        hrBox.textContent = addZeroes(hrsLeft);
+                        minBox.textContent = addZeroes(minsLeft);
+                        secBox.textContent = addZeroes(secsLeft);
+                    }
+                }
+                let i = setInterval(countdown,1000);
+                countdown();</SCript> -->
         <script src="js/swiper-bundle.min.js"></script>
   <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
+    <!-- <script src="js/discont.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <!-- scrolll animation -->
       <script>
