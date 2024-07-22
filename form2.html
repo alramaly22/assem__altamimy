@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/blacklogo.webp"  type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Assem Altamimy is a certified fitness trainer and nutrition expert who helps individuals change their mindsets and adopt healthier lifestyles. With over 9 years of experience in the fitness industry and multiple certifications, Assem offers customized fitness and nutrition programs to help clients achieve their goals through flexible plans. Learn how to improve your health and fitness with Assem Altamimy." />
+    <meta property="og:title" content="Assem Altamimy - Certified Fitness Trainer and Nutrition Expert" />
+    <meta property="og:description" content="Assem Altamimy is a certified fitness trainer and nutrition expert who helps individuals change their mindsets and adopt healthier lifestyles. With over 9 years of experience in the fitness industry and multiple certifications, Assem offers customized fitness and nutrition programs to help clients achieve their goals through flexible plans. Learn how to improve your health and fitness with Assem Altamimy." />
+
+    <link rel="stylesheet" href="css/masterform.css">
+    <link rel="stylesheet" href="css/mm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body {
+    font-family: 'Cairo', sans-serif;
+}
+        #progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 95px;
+	line-height: 20px;
+	display: block;
+	font-size: 0;
+	color: #333;
+	background: #cecece;
+	border-radius: 2rem;
+	margin: 0 auto 5px auto;
+}
+#msform fieldset{
+    background: #42454296;
+    border: 0 none;
+    border-radius: 4rem 0;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    /* margin: 0 10%; */
+    position: absolute;
+}
+.calculate__input{
+    height: 60px;
+    /* outline: none; */
+    margin-bottom: 1.5rem;
+    width: 80%;
+    /* background: transparent; */
+    padding: 0 1rem;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 4rem 0;
+    background: #00000059;
+    text-align: center;
+}
+#msform .action-button{
+    text-align: center;
+    width: 43%;
+    background: #4cdee6;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 10px 5px;
+    /* position: absolute; */
+    bottom: 20px;
+    right: 35px;
+    border-radius: 2rem 0;
+    /* width: 120px; */
+    height: 40px;
+    z-index: 999;
+    /* background-color: #0077ff; */
+    color: white;
+    margin: 10px 5px;
+}
+.fs-subtitle{
+    color: white;
+}
+.button{
+    border-radius: 4rem 0;
+}
+.labquestion{
+    color: white;
+}
+form textarea,form input{
+    /* position: absolute; */
+    border-radius: 4rem 0;
+    width: 80%;
+    height: 60px;
+    background: #00000059;
+    border: 3px solid hsl(0, 0%, 40%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-weight: var(--font-medium);
+    transition: border .4s, background-color .4s;
+    resize: none;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--secondary-color);
+    text-align: right;
+    /* align-items: center; */
+    align-content: center;
+}
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav containere">
+            <a href="index.html" class="nav__logo">
+                <img src="image/whitelogo.webp" alt="" id="logo">
+                <!-- assem eltamimy -->
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html"  class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html"  class="nav__link">Transformation</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html"  class="nav__link">Clients</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html"  class="nav__link">Pricing</a>
+                    </li>
+                </ul>
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            
+            <div class="nav__buttons">
+                <!-- theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                                    </div>
+                                    <!-- <select name="" id="language-selector">
+                                        <option value="en" selected>Eg</option>
+                                        <option value="ar">ar</option>
+                                    </select> -->
+            </div>
+        </nav>
+    </header> 
+
+
+
+
+
+    <button class="button" id="toggleButton">Get Start</button>
+    <section class="wrapper hidden" id="imageSection">
+        <div class="form signup">
+    <!-- multistep form -->
+
+    
+<form id="msform">
+	<!-- progressbar -->
+	<ul id="progressbar">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+	</ul>
+	<!-- fieldsets -->
+    <fieldset>
+        <h2 class="fs-title">السؤال 1</h2>
+        <h3 class="fs-subtitle">من اصل عدد ايام المطلوبة كام يوم ذهبت فعلاً للتمرين</h3>
+        <input class="calculate__input" type="number" name="actualTrainingDays" id="actualTrainingDays" placeholder="عدد الأيام" required min="0" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+  
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 2</h2>
+        <h3 class="fs-subtitle">هل أكملت جميع تمارين الكارديو المطلوبة؟</h3>
+        <div class="f">
+            <div class="fy">
+                <label class="labquestion" for="completedCardio">نعم</label>
+                <input type="radio" id="completedCardioYes" name="completedCardio" value="Yes" required>
+            </div>
+            <div class="fn">
+                <label class="labquestion" for="completedCardio">لا</label>
+                <input type="radio" id="completedCardioNo" name="completedCardio" value="No" required>
+            </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+	<!-- مُدخل نطاق الوزن -->
+    <fieldset>
+        <h2 class="fs-title">السؤال 3</h2>
+        <label class="labquestion" for="uncompletedExercises">هل هناك تمارين لم تستطع القيام بها؟ إذا كان الجواب نعم، ما هي؟</label>
+        <textarea id="uncompletedExercises" name="uncompletedExercises" rows="4" cols="50" required></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+
+    
+	<fieldset>
+        <h2 class="fs-title">السؤال 4</h2>
+        <label class="labquestion" for="painfulExercises">هل هناك أي تمارين تسببت في ألم أو إزعاج؟</label>
+        <textarea class="form-control" name="painfulExercises" id="painfulExercises" rows="2" required onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+
+    
+
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 5</h2>
+        <label class="labquestion" for="workoutDuration">ما هي المدة التي تنهي فيها التمرين عادة؟</label>
+        <input  type="text" class="calculate__input" name="workoutDuration" id="workoutDuration" required />
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 6</h2>
+        <label class="labquestion" for="fatigue">هل تشعر بأي تعب أو خمول قبل أو أثناء التمرين؟</label>
+        <textarea class="form-control" name="fatigue" id="fatigue" rows="2" required onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 7</h2>
+        <label class="labquestion" for="nonAdherenceReasons">ما هي الأسباب التي تمنعك من الالتزام بأيام التمرين المطلوبة؟</label>
+        <textarea class="form-control" name="nonAdherenceReasons" id="nonAdherenceReasons" rows="2" required onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 8</h2>
+        <div class="dis">
+            <label class="labquestion" for="dietAdherenceRate">ما هي نسبة التزامك بالدايت بالمئة؟</label>
+            <input type="number" class="calculate__input" name="dietAdherenceRate" id="dietAdherenceRate" min="0" max="100" required>
+        </div>       
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 9</h2>
+        <label class="labquestion" for="outsidePlanDetails">هل قمت بأكل أي شيء خارج الجدول؟ الرجاء تحديد الأيام، النوع، والكمية.</label>
+        <textarea class="form-control" name="outsidePlanDetails" id="outsidePlanDetails" rows="4" required></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 10</h2>
+        <label class="labquestion" for="boredWithDiet">هل تشعر بالملل من نظامك الغذائي الحالي؟ يرجى شرح السبب.</label>
+        <textarea class="form-control" name="boredWithDiet" id="boredWithDiet" rows="4" required></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+ 
+    
+
+    <fieldset>
+        <h2 class="fs-title">السؤال 11</h2>
+        <h3 class="fs-subtitle">هل يوجد صنف معين من الطعام تفضل عدم تضمينه في خطة الوجبات القادمة؟</h3>
+        <textarea class="form-control" name="foodAvoidance" id="foodAvoidance" rows="4" required></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+       
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 12</h2>
+        <h3 class="fs-subtitle">يرجى سرد أسباب عدم الالتزام بالدايت، حتى نتمكن من تجنبها في الخطة القادمة:</h3>
+        <textarea class="form-control" name="dietNonAdherenceReasons" id="dietNonAdherenceReasons" rows="4" required></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+ 
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 13</h2>
+        <h3 class="fs-subtitle">كم لتر من الماء تشرب يوميًا؟</h3>
+        <input class="calculate__input"  type="number" name="water_intake" id="water_intake" step="0.1" min="0" required />
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 14</h2>
+        <div class="dis">
+            <h3 class="fs-subtitle">ما هي عدد ساعات نومك اليومية؟</h3>
+            <input class="calculate__input"  type="number" name="sleep_hours" id="sleep_hours" required min="0" max="24" />
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" name="next" class="next action-button" value="التالي" />
+    </fieldset>
+    
+    
+    
+    
+    <fieldset>
+        <h2 class="fs-title">السؤال 15</h2>
+        <h3 class="fs-subtitle">هل تعاني من أي ضغوطات عائلية أو عملية؟</h3>
+        <textarea name="stress_info" id="stress_info" rows="4" required onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="السابق" />
+        <input type="button" id="sendToWhatsApp" class="submit action-button" value="إرسال" />
+    </fieldset>
+    
+    
+    
+   
+</section>
+
+</form>
+</div>
+ <!--========== whatsapp ==========-->
+
+       
+ <a href="https://api.whatsapp.com/send?phone=+201021271458" class="whatsapp">
+    <i class="fa-brands fa-whatsapp wahtsapp-icon"></i>
+        </a>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // اختر زر "Send to WhatsApp" باستخدام معرف الزر
+        const sendToWhatsAppButton = document.getElementById("sendToWhatsApp");
+
+        // اضبط رقم الواتساب الهدف هنا
+        const whatsappNumber = "+201021271458";
+
+        sendToWhatsAppButton.addEventListener("click", function () {
+            const actualTrainingDays = document.getElementById("actualTrainingDays").value;
+
+            // جمع جميع الإجابات من النموذج هنا واستخدامها لإنشاء الرسالة
+            const completedCardio = document.querySelector('input[name="completedCardio"]:checked').value;
+
+            const uncompletedExercises = document.getElementById("uncompletedExercises").value;
+
+            const painfulExercises = document.getElementById("painfulExercises").value;
+            const workoutDuration = document.getElementById("workoutDuration").value;
+            const fatigue = document.getElementById("fatigue").value;
+            const nonAdherenceReasons = document.getElementById("nonAdherenceReasons").value;
+            const dietAdherenceRate = document.getElementById("dietAdherenceRate").value;
+            const outsidePlanDetails = document.getElementById("outsidePlanDetails").value;
+            const boredWithDiet = document.getElementById("boredWithDiet").value;
+            const foodAvoidance = document.getElementById("foodAvoidance").value;
+            const dietNonAdherenceReasons = document.getElementById("dietNonAdherenceReasons").value;
+            const waterIntake = document.getElementById("water_intake").value;
+            const sleepHours = document.getElementById("sleep_hours").value;
+            const stressInfo = document.getElementById("stress_info").value;
+
+            // بناء الرسالة
+            let message = `أيام التمرين الفعلي: ${actualTrainingDays}\nالتمارين الهوائية المكتملة: ${completedCardio}\nالتمارين التي لم تُكملها: ${uncompletedExercises}\nالتمارين التي سببت الألم: ${painfulExercises}\nمدة التمرين: ${workoutDuration} دقيقة\nالتعب قبل/أثناء التمرين: ${fatigue}\nأسباب عدم الالتزام بأيام التمرين: ${nonAdherenceReasons}\nنسبة الالتزام بالدايت: ${dietAdherenceRate}%\nأطعمة تناولتها خارج الخطة: ${outsidePlanDetails}\nالملل من النظام الغذائي: ${boredWithDiet}\nأسباب تجنب بعض الأطعمة: ${foodAvoidance}\nأسباب عدم الالتزام بالدايت: ${dietNonAdherenceReasons}\nتناول الماء: ${waterIntake} لتر\nعدد ساعات النوم في اليوم: ${sleepHours}\nالضغوطات العائلية/العملية: ${stressInfo}`;
+
+            // تشفير الرسالة لاستخدامها في رابط WhatsApp
+            const encodedMessage = encodeURIComponent(message);
+
+            // إنشاء رابط WhatsApp بناءً على الرقم والرسالة
+            const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+
+            // توجيه المستخدم إلى رابط WhatsApp
+            window.location.href = whatsappLink;
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    // احصل على الزرار والقسم الصورة
+const toggleButton = document.getElementById('toggleButton');
+const imageSection = document.getElementById('imageSection');
+
+// قم بإضافة مستمع لنقرة الزرار
+toggleButton.addEventListener('click', function () {
+    // قم بإخفاء الزرار
+    toggleButton.style.display = 'none';
+    // قم بعرض القسم الصورة
+    imageSection.style.display = 'block';
+});
+
+
+</script>
+<script>
+    /*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+</script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/mianform.js"></script>
+<!-- jQuery easing plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+</body>
+</html>
