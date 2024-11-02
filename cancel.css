@@ -1,0 +1,590 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Black+Ops+One&family=Cairo:wght@300;400;500;700;800;1000&family=Dancing+Script:wght@600&family=Freehand&family=Lobster&family=Lora:ital,wght@0,500;0,600;1,400&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:wght@500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cairo:wght@300;400;500;700;800;1000&family=Dancing+Script:wght@600&family=Freehand&family=Lobster&family=Lora:ital,wght@0,500;0,600;1,400&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:wght@500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@600&family=Freehand&family=Lobster&family=Lora:ital,wght@0,500;0,600;1,400&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:wght@500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@600&family=Freehand&family=Lora:ital,wght@0,500;0,600;1,400&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@600&family=Freehand&family=Lobster&family=Lora:ital,wght@0,500;0,600;1,400&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:wght@500;600;700;800;900&display=swap');
+:root {
+    --header-height: 3.5rem;
+    --container-color: hsl(19, 10%, 10%);
+    --first-color: #000000;
+    --second-color: #0000ff;
+    --title-color: #ffffff;
+    --text-color: #ffffff;
+    --body-color: #000000;
+    --container-color: #101010;
+    --my-color: hsl(210, 96%, 54%);
+    --tt-color: #5ce1e6;
+    --white-main: #fff;
+    --nav_link: #fff;
+    --ttt-color: #fff;
+    --primary: #1f3138;
+    --second: #fdf3ed;
+    --accent: #f05938;
+    --shape-gradient: linear-gradient(90deg, hsl(300, 76%, 60%), hsl(57, 81%, 60%));
+    --body-gradient: linear-gradient(180deg, hsl(22, 100%, 84%), hsl(265, 100%, 80%));
+    --section-itle-color: hsl(210, 96%, 54%);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Teko', sans-serif;
+    --title-font: 'Teko', serif;
+    --subtitle-font: "Dancing Script", cursive;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*  */
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    /*========== Margenes Bottom ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+     :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 2.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* variable dark theme */
+
+body {
+    background-image: linear-gradient(rgb(88 218 229 / 0%), rgb(255 255 255 / 0%)), url(../image/back2.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    color: #333;
+    direction: rtl;
+    display: flex;
+    /* استخدام flexbox */
+    align-items: center;
+    /* محاذاة عمودية في المنتصف */
+    justify-content: center;
+    /* محاذاة أفقية في المنتصف */
+    height: 100vh;
+    /* جعل ارتفاع الجسم ملء الشاشة */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* theme */
+
+.nav__buttons {
+    /* color: #0000ff; */
+    display: none;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+#theme-button {
+    color: var(--title-color);
+}
+
+.change-theme {
+    /* display: none; */
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5.5rem 0 1rem;
+}
+
+.section__title {
+    color: var(--section-itle-color);
+    /* font-size: var(--h1-font-size); */
+    font-family: var(--title-font);
+    margin-bottom: 1.5rem;
+}
+
+.section__title-center {
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--h2-font-size);
+    font-family: var(--subtitle-font);
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgb(4 9 30 / 50%)), url(../image/backcalc.jpeg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.somebutton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.somebutton button {
+    background-color: #5ce1e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.somebutton button:hover {
+    background-color: #013c61;
+    color: white;
+}
+
+.calculator {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calculator input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-left: 5px;
+}
+
+.calculator h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+    display: none;
+    margin: 10px 0 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.nun {
+    width: 50%;
+}
+
+button {
+    background-color: #5ce1e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+
+/* تنسيق عنصر select */
+
+#replacementFoodVegetables,
+#originalFoodVegetables,
+#originalFoodProtein,
+#replacementFoodProtein,
+#originalFoodCarbohydrate,
+#replacementFoodCarbohydrate,
+#originalFoodHealthyFats,
+#replacementFoodHealthyFats,
+#originalFoodFruits,
+#replacementFoodFruits,
+#originalFoodDairy,
+#replacementFoodDairy,
+#originalFoodLegumes,
+#replacementFoodLegumes,
+#originalFoodSnack,
+#replacementFoodSnack {
+    background-color: #f9f9f9;
+    /* لون خلفية خفيف */
+    color: #2c3e50;
+    /* لون النص */
+    border: 2px solid #3498db;
+    /* لون الحدود أخضر غامق */
+    border-radius: 8px;
+    /* زوايا مستديرة أكثر */
+    padding: 12px 15px;
+    /* حشوة أكبر */
+    font-size: 16px;
+    /* حجم الخط */
+    width: 100%;
+    /* عرض كامل */
+    max-width: 400px;
+    /* أقصى عرض للعنصر */
+    cursor: pointer;
+    /* تغيير شكل المؤشر عند التمرير */
+    appearance: none;
+    /* إخفاء السهم الافتراضي */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* ظل خفيف */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* تأثير سلس */
+    position: relative;
+    /* لتنسيق السهم المخصص */
+}
+
+
+/* إضافة تأثير عند التفاعل */
+
+#replacementFoodVegetables:focus {
+    border-color: #2ecc71;
+    /* تغيير لون الحدود عند التركيز */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* زيادة الظل */
+    outline: none;
+    /* إزالة الإطار الافتراضي */
+}
+
+
+/* تنسيق السهم المخصص */
+
+#replacementFoodVegetables::after {
+    content: "▼";
+    /* رمز السهم */
+    position: absolute;
+    /* تموضع السهم */
+    right: 15px;
+    /* المسافة من اليمين */
+    top: 50%;
+    /* تموضعه في المنتصف عموديًا */
+    transform: translateY(-50%);
+    /* نقل السهم لأعلى */
+    font-size: 14px;
+    /* حجم الخط للسهم */
+    color: #27ae60;
+    /* لون السهم */
+    pointer-events: none;
+    color: red;
+    /* منع السهم من التفاعل */
+}
+
+
+/* تنسيق خيارات القائمة */
+
+#replacementFoodVegetables option {
+    background-color: #ffffff;
+    /* لون الخلفية */
+    color: #2c3e50;
+    /* لون النص */
+    padding: 10px;
+    /* حشوة داخلية */
+    font-size: 16px;
+    /* حجم الخط */
+}
+
+
+/* تحسين قابلية الاستخدام على الأجهزة المحمولة */
+
+@media (max-width: 600px) {
+    #replacementFoodVegetables {
+        font-size: 14px;
+        /* تقليل حجم الخط للأجهزة الصغيرة */
+        padding: 10px;
+        /* تقليل الحشوة */
+    }
+    #replacementFoodVegetables::after {
+        font-size: 12px;
+        /* تقليل حجم السهم */
+    }
+}
+
+
+/*=============== HEADER & NAV ===============*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    display: flex;
+    align-items: center;
+    left: 0;
+    justify-content: center;
+    z-index: var(--z-fixed);
+    transition: box-shadow .3s, background .4s ease;
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__close {
+    display: flex;
+    color: black;
+}
+
+.nav__toggle {
+    display: none;
+    display: flex;
+    color: black;
+}
+
+.nav__logo {
+    align-items: center;
+    column-gap: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.3s;
+}
+
+.nav__logo img {
+    width: 155px;
+    /* margin-top: 10px;
+    max-width: 8%;
+    height: auto; */
+    /* /* width: 11vw;  */
+}
+
+
+/* يتم تغيير حجم اللوجو للشاشات التي تكون أصغر من 767 بكسل */
+
+.nav__logo:hover {
+    color: var(--first-color);
+}
+
+.nav__toggle {
+    display: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        display: none;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: var(--body-color);
+        width: 100%;
+        box-shadow: 0 8px 20px hsla(19, 46%, 24%, .1);
+        padding-block: 3.5rem;
+        transition: top .4s;
+        /* background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/gold\ .png') no-repeat center center ; */
+        background-size: cover;
+        /* background-size: cover; */
+        background-position: center;
+        /* background-attachment: fixed; */
+        border-radius: 0 0 50px 50px;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+}
+
+.nav__link {
+    color: black;
+    font-weight: var(--font-medium);
+    transition: color .4s;
+}
+
+.nav__link:hover {
+    color: var(--my-color);
+}
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Show menu */
+
+.show-menu {
+    top: 0;
+}
+
+@media screen and (min-width: 767px) {
+    .nav {
+        column-gap: 3rem;
+    }
+    .nav__toggle,
+    .nav__close,
+    .nav__img-1,
+    .nav__img-2 {
+        display: none;
+    }
+    .nav__list {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+    .nav__menu {
+        display: none;
+        /* background-image: none; */
+        margin-left: auto;
+    }
+    .dark-theme .nav__menu {
+        box-shadow: none;
+    }
+    .active-link::before {
+        background-color: var(--white-color);
+    }
+    .scroll-header .nav__link {
+        color: var(--text-color);
+    }
+    .scroll-header .active-link {
+        color: var(--title-color);
+    }
+    .scroll-header .active-link::before {
+        background-color: var(--title-color);
+    }
+    .scroll-header .change-theme {
+        color: var(--text-color);
+    }
+    .section {
+        padding: 7rem 0 2rem;
+    }
+    .section__data {
+        text-align: initial;
+    }
+    .section__title {
+        padding-top: 1rem;
+        justify-content: initial;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .section {
+        padding: 7rem 1.5rem;
+    }
+    .section__subtitle {
+        font-size: 2rem;
+        margin-bottom: .75rem;
+    }
+}
