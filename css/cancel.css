@@ -262,18 +262,78 @@ label {
 }
 
 input,
+
+/* تنسيق السهم المخصص */
+
 select {
+    appearance: none;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
     width: 100%;
-    padding: 8px;
+    max-width: 400px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding-right: 30px;
+    margin-top: 15px;
+    /* مساحة للسهم */
+}
+
+
+/* السهم بجانب العنصر */
+
+select::after {
+    content: "▼";
+    /* رمز السهم */
+    position: absolute;
+    right: 10px;
+    /* المسافة من اليمين */
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 14px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-align: center;
+    color: #27ae60;
+    pointer-events: none;
+    /* منع السهم من التفاعل */
 }
 
 .nun {
-    width: 50%;
+    width: 65%;
+}
+
+select {
+    -webkit-appearance: none;
+    /* لإزالة السهم الافتراضي على المتصفحات مثل Chrome وSafari */
+    -moz-appearance: none;
+    /* لإزالة السهم الافتراضي على Firefox */
+    appearance: none;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding-left: 30px;
+    /* إضافة مساحة للسهم على اليسار */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2327ae60'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    /* موضع السهم على اليسار */
+    background-size: 16px;
+}
+
+select:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 button {
@@ -413,7 +473,8 @@ p {
 
 /*=============== HEADER & NAV ===============*/
 
-.header {
+
+/* .header {
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
@@ -424,6 +485,23 @@ p {
     justify-content: center;
     z-index: var(--z-fixed);
     transition: box-shadow .3s, background .4s ease;
+} */
+
+.header {
+    position: fixed;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* لون خلفية ثابت لضمان وضوحه */
+    top: 0;
+    display: flex;
+    align-items: center;
+    left: 0;
+    justify-content: center;
+    z-index: 1000;
+    /* تأكد من أن z-index عالي لجعله فوق باقي العناصر */
+    transition: box-shadow .3s, background .4s ease;
+    height: var(--header-height);
+    /* ارتفاع ثابت */
 }
 
 .nav {
@@ -452,6 +530,7 @@ p {
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
     transition: color 0.3s;
+    color: #fff;
 }
 
 .nav__logo img {
