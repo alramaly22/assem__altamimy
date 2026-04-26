@@ -1604,16 +1604,40 @@ video {
     cursor: pointer;
     border-radius: 50px;
     row-gap: 2rem;
-    background-image: linear-gradient(rgb(4 9 30 / 97%), rgb(4 9 30 / 75%)), url(../image/pricingpackage.webp);
+    /* background-image: linear-gradient(rgb(4 9 30 / 97%), rgb(4 9 30 / 75%)), url(../image/pricingpackage.webp);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     position: relative;
     /* background-color: var(--container-color); */
     padding: 2rem 1.5rem 2.5rem;
     border-radius: 1.75rem;
     box-shadow: 0 12px 24px hsla(210, 61%, 16%, 0.1);
     transition: .4s;
+}
+
+.pricesection1 {
+    background-image: linear-gradient(rgb(4 9 30 / 97%), rgb(4 9 30 / 75%)), url(../image/3.jpeg);
+    background-size: contain;
+    background-position: center;
+}
+
+.pricesection2 {
+    background-image: linear-gradient(rgb(4 9 30 / 97%), rgb(4 9 30 / 75%)), url(../image/1.jpeg);
+    background-size: contain;
+    background-position: center;
+}
+
+.pricesection3 {
+    background-image: linear-gradient(rgb(4 9 30 / 97%), rgb(4 9 30 / 75%)), url(../image/2.jpeg);
+    background-size: contain;
+    background-position: center;
+}
+
+.pricesection4 {
+    background-image: linear-gradient(rgb(4 9 30 / 97%), rgb(4 9 30 / 75%)), url(../image/4.jpeg);
+    background-size: contain;
+    background-position: center;
 }
 
 .pricing__contentnot {
