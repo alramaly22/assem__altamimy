@@ -669,16 +669,16 @@
 
                 // احصل على إجابة السؤال السابع عشر
                 const package = document.querySelector('input[name="package"]:checked').value;
-                const dietBefore = document.querySelector('input[name="diet_before"]:checked') ? .value || "Not answered";
+                const dietBefore = document.querySelector('input[name="diet_before"]:checked') ?.value || "Not answered";
 
-                const lastDiet = document.querySelector('input[name="last_diet"]:checked') ? .value || "Not answered";
+                const lastDiet = document.querySelector('input[name="last_diet"]:checked') ?.value || "Not answered";
 
                 const dietBreakReason = document.getElementById("diet_break_reason").value;
                 const supplements = document.getElementById("supplements").value;
 
-                const currentExercise = document.querySelector('input[name="current_exercise"]:checked') ? .value || "Not answered";
+                const currentExercise = document.querySelector('input[name="current_exercise"]:checked') ?.value || "Not answered";
 
-                const trainingExperience = document.querySelector('input[name="training_experience"]:checked') ? .value || "Not answered";
+                const trainingExperience = document.querySelector('input[name="training_experience"]:checked') ?.value || "Not answered";
                 // بناء الرسالة
                 let message = `Name: ${name}
 Age: ${age}
