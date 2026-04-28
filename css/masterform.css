@@ -496,7 +496,7 @@ form textarea {
     color: white;
     text-transform: uppercase;
     font-size: 9px;
-    width: 4.75%;
+    width: 3.75%;
     float: left;
     position: relative;
 }
@@ -504,7 +504,7 @@ form textarea {
 #progressbar li:before {
     content: counter(step);
     counter-increment: step;
-    width: 55px;
+    width: 64px;
     line-height: 20px;
     display: block;
     font-size: 0;
